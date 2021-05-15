@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+/* * */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+/* para sa announcement sa homepage */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+/* icons */
+
+* {
+  font-family: montserrat; /* ^ imported sa google fonts */
+  color: black; /* linagyan ko ng kulay kasi iba yung kulay sa ibang browsers */
+  text-decoration: none; /* para mawala yung underline sa ibang text */
+}
+
+/* start of navigation bar */
+
+#logo {
+  width: 15%;
+  height: auto;
+  float: left;
+  padding: 1% 7% 1% 7%; /* top, right, bottom, left */
+  margin: 0.5% 1px 1px 0; /* top, right, bottom, left */
+}
+
+.topnav {
+  overflow: hidden; /* tinago yung sobrang mga laman sa padding ng rectangle */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase; /* gawing capital yung letters sa navbar */
+  padding: 1.5% 1.5% 1.5% 1.5%; /* top, right, bottom, left */
+  margin: 2% 1px 1px 1px; /* top, right, bottom, left */
+  border-radius: 5px; /* para di masyadong sharp tignan yung corners ng edges */
+}
+
+.topnav a:hover {
+  color: white;
+  background-color: #f70d1a; /* << ferrari red, vroom vroom */
+}
+
+.topnav a.active {
+  color: white;
+  background-color: #f70d1a; /* << ferrari red, vroom vroom */
+}
+
+.topnav .icon {
+  display: none; /* hamburger menu icon, magpapakita lang siya kung cute na yung screen */
+}
+
+/* end of navigation bar */
+
+/* start of home */
+
+#home-sec-1 {
+  margin: 5% 5% 0 5%; /* top, right, bottom, left */
+}
+
+#hero-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+#text-home {
+  font-size: 30px;
+  text-align: center;
+  padding: 0 0 0 60%; /* top, right, bottom, left */
+}
+
+#h2-home {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  padding: 5% 0 0 60%; /* top, right, bottom, left */
+}
+
+#kto12-h2 {
+  font-size: 50px;
+  text-align: left;
+  padding: 6% 0 0 0; /* top, right, bottom, left */
+}
+
+#kto12-text {
+  font-size: 18px;
+  text-align: left;
+  padding: 0 55% 0 0; /* top, right, bottom, left */
+}
+
+#kto12-video {
+  float: right;
+  margin: 5% 0 0 0; /* top, right, bottom, left */
+  width: 50%;
+  height: 340px;
+}
+
+.slideshow-container {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#home-sec-2 {
+  margin: 0 5% 15% 5%; /* top, right, bottom, left */
+}
+
+/* end of home */
+
+/* start of about */
+
+#section-about-1 {
+  text-align: justify;
+  padding: 3% 0 0 10.5%; /* top, right, bottom, left */
+}
+
+#section-about-2 {
+  text-align: justify;
+  padding: 0 10% 0 10.5%; /* top, right, bottom, left */
+}
+
+#section-about-3 {
+  padding: 0 0 5% 0; /* top, right, bottom, left */
+}
+
+#left-img-about {
+  width: 30%;
+  float: left;
+}
+
+#right-img-about {
+  width: 40%;
+  float: right;
+  margin-top: 2%;
+}
+
+#center-img-about {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+#first-p-about {
+  text-align: justify;
+  padding: 0 11% 0 32%; /* top, right, bottom, left */
+}
+
+#second-p-about {
+  text-align: justify;
+  padding: 0 42% 0 0; /* top, right, bottom, left */
+}
+
+/* end of about */
+
+/* start of events */
+
+.main-event {
+  max-width: 1000px;
+  margin: auto;
+} /* para naka gitna yung website */
+
+.row-event {
+  margin: 8px -16px;
+} /* para mapalaki konti yung content */
+
+.column-event {
+  float: left;
+  width: 25%;
+} /* para mag kakatabi yung mga images */
+
+.row-event:after {
+  content: "";
+  display: table;
+  clear: both;
+} /* para sa susunod na mga images */
+
+.content-event {
+  background-color: white;
+  padding: 10px;
+} /* invisible box ng images with text (pero jok, white lang kasi yung bg hihi) */
+
+#event-sec {
+  margin-bottom: 5%;
+}
+
+#h1-event,
+.event-h3 {
+  text-align: center;
+}
+
+.event-hashtag {
+  color: #f70d1a; /* << ferrari red, vroom vroom */
+  font-weight: bold;
+}
+
+.event-text {
+  text-align: justify;
+  text-align-last: justify;
+  word-spacing: -1px; /* para mabawasan ng konte yung spaces sa gitna ng words */
+}
+
+/* end of events */
+
+/* start of tracks */
+
+.track-sec-top {
+  margin-top: 5%;
+}
+
+.row-track {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 3% 0 3%; /* top, right, bottom, left */
+}
+
+.column-track {
+  flex: 35%;
+  padding: 50px;
+}
+
+#track-img-one {
+  background-image: url(images/academic-vector4free.com.png);
+  background-size: cover;
+}
+
+#track-img-two {
+  background-image: url(images/arts&design-vector4free.com.png);
+  background-size: cover;
+}
+
+#track-img-three {
+  background-image: url(images/sports-vector4free.com.png);
+  background-size: cover;
+}
+
+#track-img-four {
+  background-image: url(images/techvoc-vector4free.com.png);
+  background-size: cover;
+}
+
+.track-text {
+  color: white;
+}
+
+/* end of tracks */
+
+/* start of map and gallery */
+
+.img-p5 {
+  margin: 0 10% 0 10%;
+}
+
+#page5-sec-1 {
+  margin-top: 5%;
+}
+
+#map-text {
+  text-align: center;
+}
+
+#map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.h2-gallery-text {
+  text-align: center;
+}
+
+.main {
+  max-width: 90%;
+}
+
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+.row {
+  margin: 8px -16px;
+} /* para mapalaki konti yung content */
+
+.column {
+  float: left;
+  width: 30%;
+  display: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.show {
+  display: inline-flex;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #181818;
+  color: white;
+}
+
+#page5-sec-2 {
+  margin-bottom: 5%;
+}
+
+/* end of map and gallery */
+
+/* start of footer */
+
+.footer-basic {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background-color: #181818;
+}
+
+.fa {
+  width: 20px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  width: 10px;
+  padding: 10px;
+  font-size: 10px;
+  color: white;
+  background: #3b5998;
+  margin: 2px 2px 2px 0; /* top, right, bottom, left */
+}
+
+.fa-twitter {
+  width: 10px;
+  padding: 10px;
+  font-size: 10px;
+  color: white;
+  background: #55acee;
+  margin: 2px 2px 2px 2px; /* top, right, bottom, left */
+}
+
+.fa-instagram {
+  width: 10px;
+  padding: 10px;
+  font-size: 10px;
+  color: white;
+  background: #c13584;
+  margin: 2px 2px 2px 2px; /* top, right, bottom, left */
+}
+
+.footer-text,
+.fa-map-marker,
+.fa-phone,
+.fa-envelope,
+.fa-plug {
+  color: white;
+}
+
+/* end of footer */
+
+@media screen and (max-device-width: 1224px) {
+  /* ^ desktops & laptops ^ */
+  .topnav a:not(:last-child) {
+    display: none;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    margin: 11% 0 0 0; /* top, right, bottom, left */
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    margin: 0 0 0 0; /* top, right, bottom, left */
+  }
+  #logo {
+    width: 30%;
+    height: auto;
+    display: block;
+    position: absolute;
+  }
+  .fa {
+    padding: 2vw;
+    font-size: 2vw;
+    width: 2vw;
+  } /* ^ lahat ng icons */
+  .fa-facebook,
+  .fa-twitter,
+  .fa-instagram {
+    padding: 1vw;
+    font-size: 1vw;
+    width: 1vw;
+  } /* para hiwalay sa .fa styles */
+  .fa-bars {
+    font-size: 20px;
+  } /* ^ menu bar | ^ top, right, bottom, left*/
+  .fa-bars:hover {
+    color: white;
+  }
+  .footer-text {
+    font-size: 2vw;
+    float: none;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin-top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 1% 0 1% 0;
+    position: relative;
+    font-size: 4vw;
+  }
+  #home {
+    margin-top: 18%;
+  }
+  #about-h2 {
+    text-align: center;
+    font-size: 6vw;
+  }
+  #left-img-about,
+  #right-img-about,
+  #center-img-about {
+    width: 100%;
+    height: auto;
+    padding: 0 0 2% 0; /* top, right, bottom, left */
+    margin: 0 0 0 0; /* top, right, bottom, left */
+  }
+  #first-p-about,
+  #second-p-about {
+    text-align: justify;
+    text-align-last: justify;
+    font-size: 4vw;
+    padding: 0 5% 0 5%; /* top, right, bottom, left */
+  }
+  #section-about-1,
+  #section-about-2,
+  #section-about-3 {
+    padding: 0 0 0 0; /* top, right, bottom, left */
+    margin: 0 0 0 0; /* top, right, bottom, left */
+  }
+  #section-about-3 {
+    padding-bottom: 5%;
+  }
+  #h1-event {
+    font-size: 30px;
+  }
+  .event-text {
+    font-size: 15px;
+    padding: 0 5% 0 5%; /* top, right, bottom, left */
+  }
+  .slideshow-container {
+    width: 90%;
+    position: relative;
+    margin: 0 5% 5% 5%; /* top, right, bottom, left */
+  }
+  #text-home {
+    text-align: center;
+    font-size: 4vw;
+    padding: 0 5% 0 5%; /* top, right, bottom, left */
+  }
+  #h2-home {
+    text-align: center;
+    font-size: 6vw;
+    padding: 0 5% 0 5%; /* top, right, bottom, left */
+  }
+  #kto12-video {
+    width: 90%;
+    height: auto;
+    margin: 0 5% 5% 5%; /* top, right, bottom, left */
+  }
+  #kto12-h2 {
+    text-align: left;
+    font-size: 6vw;
+    padding: 5% 5% 0 5%; /* top, right, bottom, left */
+  }
+  #kto12-text {
+    text-align: left;
+    font-size: 4vw;
+    padding: 0 5% 0 5%; /* top, right, bottom, left */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .column-event {
+    width: 50%;
+  }
+  .column-track {
+    flex: 50%;
+  }
+  #map {
+    width: 100%;
+  }
+  .column {
+    width: 40%;
+  }
+  .img-p5 {
+    margin: 0 20% 0 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column-event {
+    width: 100%;
+  }
+  .row-track {
+    flex-direction: column;
+  }
+  .column {
+    width: 40%;
+  }
+  .img-p5 {
+    margin: 0 10% 0 10%;
+  }
+}
