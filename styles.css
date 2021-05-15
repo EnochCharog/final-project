@@ -75,13 +75,13 @@
   font-size: 50px;
   text-align: center;
   font-family: "Dancing Script", cursive;
-  padding: 5% 0 0 60%; /* top, right, bottom, left */
+  padding: 2% 0 0 60%; /* top, right, bottom, left */
 }
 
 #kto12-h2 {
   font-size: 50px;
   text-align: left;
-  padding: 6% 0 0 0; /* top, right, bottom, left */
+  padding: 5% 0 0 0; /* top, right, bottom, left */
 }
 
 #kto12-text {
